@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>跳动的爱心</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background-color: black;
+		}
+		.all{
+			width: 200px;
+			height: 200px;
+			margin: 100px auto;
+			animation: beat 0.9s infinite;
+			position: relative;
+		}
+		.left,.right{
+			width: 100px;
+			height: 160px;
+			background-color:hotpink;
+			border-radius: 50px 50px 0px 0px;
+			float: left;
+			box-shadow: 0px 0px 30px hotpink;
+		}
+		
+		.left{
+			transform:translateX(28px) rotate(-45deg);
+		}
+		.right{
+			transform:translateX(-28px) rotate(45deg);
+		}
+			@keyframes beat{
+			0%{
+				transform: scale(1);
+			}
+			100%{
+				transform:scale(1.1);
+			}
+		}
+		p{
+			color: white;
+			position: absolute;
+			left: 65px;
+			top: 70px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="all">
+	<div class="left"></div>
+	<div class="right"></div>
+	<p>Look! heart</p>	
+	</div>
+</body>
+</html>
